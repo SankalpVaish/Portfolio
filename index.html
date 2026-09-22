@@ -1,919 +1,798 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <title>Sankalp Vaish &mdash; PhD Candidate, Computer Science</title>
+  <meta name="author" content="Sankalp Vaish">
+  <meta name="description"
+    content="Sankalp Vaish is a Computer Science PhD candidate at UMass Boston researching multimodal machine learning — video, audio and language — for contactless early detection of cognitive decline and mental health conditions.">
 
-    <title>Sankalp Vaish</title>
+  <!-- GitHub Pages URL for the SankalpVaish/Portfolio repo. If you add a custom
+       domain, or rename the repo to sankalpvaish.github.io for a root URL,
+       update this and the six og:/twitter:/JSON-LD URLs below to match. -->
+  <link rel="canonical" href="https://sankalpvaish.github.io/Portfolio/">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Social link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sankalpvaish.github.io/Portfolio/">
+  <meta property="og:title" content="Sankalp Vaish — PhD Candidate, Computer Science">
+  <meta property="og:description"
+    content="Multimodal machine learning for health: video, audio and language signals for contactless early detection of cognitive decline.">
+  <meta property="og:image" content="https://sankalpvaish.github.io/Portfolio/img/profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sankalp Vaish — PhD Candidate, Computer Science">
+  <meta name="twitter:description"
+    content="Multimodal machine learning for health: video, audio and language signals for contactless early detection of cognitive decline.">
+  <meta name="twitter:image" content="https://sankalpvaish.github.io/Portfolio/img/profile.jpg">
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/profile.jpg">
+  <meta name="theme-color" content="#131a2e">
 
-          
+  <!-- Fonts: one request, non-blocking swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
 
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
-    
+  <!-- Technology logos for the Skills section. The only remaining icon
+       dependency; the old page loaded five overlapping icon libraries. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-  </head>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-  <body id="page-top">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" style="background-color: #895ff0e6 !important;">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <!-- <span class="d-block d-lg-none">Start Bootstrap</span> -->
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-        </span>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="sidebar">
+    <div class="sidebar__bar">
+      <a class="sidebar__identity" href="#about">
+        <img class="sidebar__avatar" src="img/profile.jpg" width="512" height="512"
+          alt="Portrait of Sankalp Vaish">
+        <span>Sankalp Vaish</span>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <svg class="nav-toggle__icon nav-toggle__icon--open" viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+        <svg class="nav-toggle__icon nav-toggle__icon--close" viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+        Menu
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+    </div>
+
+    <nav class="sidebar__nav" id="primary-nav" data-open="false" aria-label="Sections">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li id="nav-publications" hidden><a href="#publications">Publications</a></li>
+        <li id="nav-service" hidden><a href="#service">Service</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#awards">Awards &amp; Certifications</a></li>
+        <li><a href="#interests">Interests</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ==================================================== About / hero -->
+    <section class="section hero" id="about">
+      <div class="section__inner">
+        <h1 class="hero__name">Sankalp <span class="accent">Vaish</span></h1>
+
+        <p class="hero__role">PhD Candidate in Computer Science, University of Massachusetts Boston</p>
+
+        <p class="hero__meta">
+          <span>Boston, Massachusetts</span>
+          <a href="tel:+18573954370">(857)&nbsp;395&#8209;4370</a>
+          <a href="mailto:sankalp.vaish14@gmail.com">sankalp.vaish14@gmail.com</a>
+        </p>
+
+        <!--
+          DRAFT — this replaces the previous generic summary. Edit freely; it
+          should sound like you. The original read "Enthusiastic artificial
+          intelligence thinker looking to deliver cutting-edge Innovative
+          approaches", which undersold the actual lab work below.
+        -->
+        <p class="hero__bio">
+          I research multimodal machine learning for health at the MobCP Lab, combining
+          video, audio and language signals &mdash; facial action units, prosodic cues and
+          linguistic features &mdash; to build contactless, home-based screening tools for
+          early cognitive decline and mental health assessment. Alongside research I teach
+          data structures and programming, and I build systems that put modern ML into
+          software people can actually use.
+        </p>
+
+        <ul class="social">
+          <li>
+            <a href="https://in.linkedin.com/in/sankalp-vaish-384942208" target="_blank"
+              rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.4 21.5h5.16V9.04H2.4V21.5zM9.86 9.04h4.95v1.7h.07c.69-1.24 2.37-2.1 4.12-2.1 3.68 0 4.6 2.24 4.6 5.96v6.9h-5.15v-6.1c0-1.46-.28-3.05-2.05-3.05-1.72 0-2.39 1.4-2.39 2.96v6.19H9.86V9.04z" />
+              </svg>
+              LinkedIn
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          <li>
+            <a href="https://github.com/SankalpVaish" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-1.94c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .96-.31 3.16 1.18a10.9 10.9 0 0 1 5.75 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12A11.5 11.5 0 0 0 12 .5z" />
+              </svg>
+              GitHub
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          <li>
+            <a href="mailto:sankalp.vaish14@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m2 7 10 6 10-6" />
+              </svg>
+              Email
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Certificates">Certificates</a>
+          <li>
+            <a href="Sankalp_Vaish_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="12" y1="18" x2="12" y2="12" />
+                <polyline points="9 15 12 18 15 15" />
+              </svg>
+              R&eacute;sum&eacute; (PDF)
+            </a>
           </li>
         </ul>
       </div>
-    </nav>
+    </section>
 
-    <div class="container-fluid p-0">
+    <!-- ===================================================== Experience -->
+    <section class="section" id="experience">
+      <div class="section__inner">
+        <h2 class="section__title">Experience</h2>
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">SANKALP
-            <span class="text-primary">VAISH</span>
-          </h1>
-          <div class="subheading mb-5">Boston, Massachusetts· (857) 395-4370 ·
-            <a href="mailto:name@email.com">sankalp.vaish14@gmail.com</a>
+        <div class="entry">
+          <div class="entry__body">
+            <h3>AI / Machine Learning Intern</h3>
+            <p class="entry__org">Ottometric, Boston, MA</p>
+            <ul class="bullets">
+              <li>Built AI-powered CRM capabilities inside Odoo &mdash; automatic deal summaries,
+                meeting-note processing, actionable insights and natural-language querying of sales
+                opportunities &mdash; using large language models.</li>
+              <li>Integrated Amazon Bedrock into Odoo to provide secure access to multiple LLMs
+                behind a single interface for AI-driven sales automation.</li>
+              <li>Designed and implemented Gmail and Microsoft Outlook integrations with email
+                tracking, detecting opens, link clicks and replies to surface real-time customer
+                interaction insights within Odoo CRM.</li>
+              <li>Built an AI customer simulator using retrieval-augmented generation over a vector
+                database, drawing relevant context from emails, meeting notes and past interactions
+                to support realistic, context-aware customer conversations.</li>
+              <li>Built a recruitment tool that ingests job descriptions and scores candidates
+                against their r&eacute;sum&eacute;, interview feedback and HR input, cutting manual
+                screening effort in hiring.</li>
+              <li>Automated the sales funnel end to end: importing conference attendee data from
+                Excel into Odoo CRM, assigning sales opportunities, and reporting analytics on lead
+                generation, pipeline progression and event conversion rates.</li>
+              <li>Recovered and reconciled production data across Langfuse, Qdrant, WAL backups,
+                HubSpot exports and the development environment, including an Odoo module that
+                identifies and restores records from hash-based filestore files.</li>
+              <li>Developed public-facing site pages including the privacy policy, user guides and
+                careers pages.</li>
+            </ul>
           </div>
-          <p class="mb-5">Enthusiastic artificial intelligence thinker looking to deliver cutting-edge Innovative approaches. Personal projects have 
-            included the use of Algorithms, Data Analysis, Machine Learning, and Neural Networks. Actively seeking opportunities 
-            to expand my knowledge and skills in programming, software development, and artificial intelligence research.</p>
-          <ul class="list-inline list-social-icons mb-0">
-            <!-- <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li> -->
-            <li class="list-inline-item">
-              <a href="https://in.linkedin.com/in/sankalp-vaish-384942208"
-              title="LinkedIn">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/SankalpVaish"
-              title="Github">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-
-            <li class="list-inline-item">
-              <a href="Resume_121625.pdf"
-                target="_blank"
-                title="Resume"
-                aria-label="Resume">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-address-card-o fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-
-
-          </ul>
+          <p class="entry__date">June 2026 &ndash; Present</p>
         </div>
-      </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
+        <div class="entry">
+          <div class="entry__body">
+            <h3>Research Assistant</h3>
+            <p class="entry__org">MobCP Lab, UMass Boston</p>
+            <ul class="bullets">
+              <li>Built a voice-based sentiment analysis model that predicts distress levels from
+                real audio and conversation transcripts of patients managing chronic disease,
+                supporting better patient&ndash;doctor communication.</li>
+              <li>Designed and implemented a multimodal framework combining video (facial action
+                units), audio (prosodic cues) and text (linguistic features) for early dementia and
+                depression detection, using MiVOLO, ResEmoteNet and OpenFace.</li>
+              <li>Ran comparative experiments across modalities and model families (neural networks
+                vs. LLMs) to evaluate detection performance, working toward a scalable,
+                home-based, contactless screening tool for early cognitive impairment and mental
+                health assessment.</li>
+              <li>Designed and implemented a secure federated authentication framework integrating
+                ADFS with Exchange Server 2019 and other enterprise applications. Configured
+                claims-based authentication, custom SSL certificates and certificate trust, using
+                YubiKey multi-factor and smart card authentication for Windows logins and Fortinet
+                VPN.</li>
+            </ul>
+          </div>
+          <p class="entry__date">May 2025 &ndash; Present</p>
+        </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Research Assistant</h3>
-              <div class="subheading mb-3">MobCP Lab, UMass Boston </div>
-              <ul>
-                <li>  Built a voice-based sentiment analysis model that can analyse and predict distress levels from real audio and conversation transcripts from patients dealing with chronic disease, helping improve patient–doctor communication.</li>
-                <li>	Designed and implemented a multimodal framework combining video (facial Action Units), audio (prosodic cues), and text (linguistic features) for early dementia and depression detection. Using models like MiVOLO, ResEmoteNet and OpenFace.</li>
-                <li>	Conducted comparative experiments across modalities and models (NN vs. LLM) to evaluate detection performance. Aim to develop a scalable, home-based, contactless screening tool for early cognitive impairment and mental health assessment. </li>
-                <li>	Design and implement a secure federated authentication framework integrating ADFS with Exchange Server 2019 and other enterprise applications. Configured claims-based authentication, custom SSL certificates, and certificate trust to strengthen identity management using YubiKey-based multi-factor and smart card authentication for Windows logins, and Fortinet VPN.</li>
+        <div class="entry">
+          <div class="entry__body">
+            <h3>Teaching Fellow</h3>
+            <p class="entry__org">Computer Science Department, UMass Boston</p>
+
+            <div class="subentry">
+              <p class="subentry__title">Data Structures in Java <span>&mdash; Instructor</span></p>
+              <ul class="bullets">
+                <li>Taught arrays, lists, stacks, queues, trees and algorithmic problem-solving.</li>
               </ul>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2025 - Present</span>
-            </div>
-          </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Teaching Fellow</h3>
-              <div class="subheading mb-3">Computer Science Department, UMass Boston </div>
-              <ul>
-                <h5>Instructor | Data Structures in Java </h5>
-                <li> Taught Data Structures in Java, covering topics like arrays, lists, stacks, queues, trees, and algorithmic problem-solving. </li>
-                <br>
-                <h5>Instructor | Introduction to Programming in Python</h5>
-                <li>Taught Introduction to Python, focusing on fundamental programming concepts, data structures, and real-world applications.</li>
-              </ul>
-              Responsibilities- Develop and assess assignments, projects, and exams, Design interactive learning materials for student engagement. Provide mentorship and academic support to enhance problem-solving and coding skills.
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2024 - Present</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Research Assistant</h3>
-              <div class="subheading mb-3">Visual Attention Lab, UMass Boston </div>
-              <ul>
-                <li> Worked on improving image quality by developing various filters for detecting blur or contrast for better face recognition. </li>
-                <li>Developed a website to collect data of different users and then used this data to make a classifier to perform this action on its own. </li>
-                <li>Extracted frames and marked humans to create data for model training to improve human detection in video analysis. </li>
-                <li>Implemented advanced techniques to fine-tune YOLOv8 for enhanced object and human detection in security camera footage.</li>
+            <div class="subentry">
+              <p class="subentry__title">Introduction to Programming in Python
+                <span>&mdash; Instructor</span></p>
+              <ul class="bullets">
+                <li>Taught fundamental programming concepts, data structures and real-world
+                  applications.</li>
               </ul>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2023 - May 2025</span>
-            </div>
+
+            <p class="entry__detail">
+              Develop and assess assignments, projects and exams; design interactive learning
+              materials; mentor students to strengthen problem-solving and coding skills.
+            </p>
           </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Assistant Teacher</h3>
-              <div class="subheading mb-3">Sky Public School, Lucknow, India</div>
-              <ul>
-               <li> Teaching Python, basic concepts of database and assembly language to high school students.  </li>
-<li> Responsibilities- Teaching, In-charge of software and hardware solutions. </li>
-              </ul>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">December 2021 - July 2022</span>
-            </div>
-          </div>
-
-          <!-- <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Junior Web Designer</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2010 - December 2011</span>
-            </div>
-          </div> -->
-
-          <!-- <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Design Intern</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2008 - June 2010</span>
-            </div>
-          </div> -->
-
+          <p class="entry__date">September 2024 &ndash; Present</p>
         </div>
 
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of Massachusetts Boston</h3>
-              <!-- <div class="subheading mb-3">Phd</div> -->
-               <div class="subheading mb-3" style="text-transform:none;">
-                  PhD
-              </div>
-              <div>Computer Science</div>
-              <p>GPA: 4.0 </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2024 - Dec 2026</span>
-            </div>
+        <div class="entry">
+          <div class="entry__body">
+            <h3>Research Assistant</h3>
+            <p class="entry__org">Visual Attention Lab, UMass Boston</p>
+            <ul class="bullets">
+              <li>Improved image quality for face recognition by developing filters that detect blur
+                and low contrast.</li>
+              <li>Built a web application to collect user-labelled data, then used that data to train
+                a classifier to perform the same judgement automatically.</li>
+              <li>Extracted frames and annotated humans to create training data, improving human
+                detection in video analysis.</li>
+              <li>Fine-tuned YOLOv8 for improved object and human detection in security camera
+                footage.</li>
+            </ul>
           </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of Massachusetts Boston</h3>
-              <div class="subheading mb-3">Master of Science</div>
-              <div>Computer Science</div>
-              <p>GPA: 4.0 </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2022 - May 2024</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">National Institute of Technology, India </h3>
-              <div class="subheading mb-3">P.G. Diploma</div>
-              <div>Machine Learning and Artificial Intelligence</div>
-              <p>GPA: 4.0</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2021 - August 2022</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">National Post Graduate College , India </h3>
-              <div class="subheading mb-3">P.G. Diploma</div>
-              <div>Remote sensing and Geographical Information System</div>
-              <p>GPA: 3.5</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">October 2021 - June 2022</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">University of Lucknow </h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science and Statistics</div>
-              <p>GPA: 3.3</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2018 - June 2021</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item" title="Python">
-              <i class="devicons devicons-python"></i>
-            </li>
-            <li class="list-inline-item" title="Pandas">
-              <i class="devicon-pandas-original-wordmark"></i>
-            </li>
-            <li class="list-inline-item" title="OpenCV">
-              <i class="devicon-opencv-plain"></i>
-            </li>
-            <li class="list-inline-item" title="TensorFlow">
-              <i class="devicon-tensorflow-original"></i>
-            </li>
-            <li class="list-inline-item" title="PyTorch">
-              <i class="devicon-pytorch-original"></i>
-            </li>
-            <li class="list-inline-item" title="Large Language Models (LLMs)">
-              <i class="fa fa-brain"></i>
-            </li>
-            <li class="list-inline-item" title="Vision-Language Models (VLMs)">
-              <i class="fa fa-eye"></i>
-            </li>
-            <li class="list-inline-item" title="Transformers">
-              <i class="fa fa-project-diagram"></i>
-            </li>
-            <!-- <li class="list-inline-item" title="Prompt Engineering">
-              <i class="fa fa-terminal"></i>
-            </li> -->
-            <li class="list-inline-item" title="Java">
-              <i class="devicons devicons-java"></i>
-            </li>
-            <li class="list-inline-item" title="C">
-              <i class="devicon-c-plain"></i>
-            </li>
-            <li class="list-inline-item" title="C++">
-              <i class="devicon-cplusplus-plain"></i>
-            </li>
-            
-            
-
-            <li class="list-inline-item" title="GitHub">
-              <i class="devicons devicons-github"></i>
-            </li>
-            
-            
-            <li class="list-inline-item" title="PostgreSQL">
-              <i class="devicons devicons-postgresql"></i>
-            </li>
-            <li class="list-inline-item" title="MongoDB">
-              <i class="devicons devicons-mongodb"></i>
-            </li>
-            <li class="list-inline-item" title="MySQL">
-              <i class="devicons devicons-mysql"></i>
-            </li>
-            
-            
-            <li class="list-inline-item" title="Django">
-              <i class="devicons devicons-django"></i>
-            </li>
-            <li class="list-inline-item" title="React">
-              <i class="devicons devicons-react"></i>
-            </li>
-            <li class="list-inline-item" title="Solidity">
-              <i class="devicon-solidity-plain"></i>
-            </li>
-            <li class="list-inline-item" title="Blender">
-              <i class="devicon-blender-original"></i>
-            </li>
-            <li class="list-inline-item" title="Three.js">
-              <i class="devicon-threejs-original"></i>
-            </li>
-            <li class="list-inline-item" title="HTML5">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item" title="CSS3">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item" title="JavaScript">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item" title="jQuery">
-              <i class="devicons devicons-jquery"></i>
-            </li>
-            <li class="list-inline-item" title="Node.js">
-              <i class="devicon-nodejs-plain-wordmark"></i>
-            </li>
-            <li class="list-inline-item" title="npm">
-              <i class="devicons devicons-npm"></i>
-            </li>
-            <!-- <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
-            </li> -->
-            <li class="list-inline-item" title="Express.js">
-              <i class="devicon-express-original"></i>
-            </li>
-            <li class="list-inline-item" title="Bootstrap">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item" title="Unix/Linux">
-              <i class="devicon-unix-original"></i>
-            </li>
-            <li class="list-inline-item" title="Docker">
-              <i class="devicons devicons-docker"></i>
-            </li>
-
-          </ul>
-
-          <!-- <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
-        </div> -->
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-        <div class="my-auto">
-          <h2 class="mb-5">Projects</h2>
-          <div class="subheading mb-3">Gmail RAG Assistant Dec ’25-Jan ‘26 </div>
-          <div style="padding-bottom: 2%;"> 
-           Built a privacy-preserving Retrieval-Augmented Generation (RAG) system that indexes Gmail emails into a local vector database and enables semantic question answering using a local LLM.          
-   <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">LLaMA 3</span>
-    <span class="tool-tag">RAG</span>
-    <span class="tool-tag">ChromaDB</span>
-    <span class="tool-tag">Ollama</span>
-    <span class="tool-tag">Google APIs</span>
-  </div>
-  <div class="subheading mb-3">Machine Learning Model Training & Analytics Platform ’25-Jan ‘26 </div>
-          <div style="padding-bottom: 2%;"> 
-           Built a full-stack Django web application that enables users to perform data analysis, preprocessing, and machine learning model training. Implemented interactive visualizations, configurable train–test split and scaling options, multiple ML algorithms, and dynamic result comparison using Python and Plotly.   
-    <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">Django</span>
-    <span class="tool-tag">Machine Learning</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Pandas</span>
-    <span class="tool-tag">NumPy</span>
-    <span class="tool-tag">HTML</span>  
-    <span class="tool-tag">JavaScript</span>
-    <span class="tool-tag">jQuery</span>
-    <span class="tool-tag">CSS</span>
-  </div>
-          </div>
-          <div class="subheading mb-3">Dementia Detection via Alexa Interactions Aug ’25-Dec ‘25 </div>
-          <div style="padding-bottom: 2%;"> 
-           Built a contactless system to assess cognitive decline in older adults by analysing facial muscles and speech during structured Alexa interactions, using multimodal features correlated with MoCA scores.
-             <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">OpenCV</span>
-    <span class="tool-tag">NLTK</span>
-    <span class="tool-tag">Multimodal Transformers</span>
-
-  </div>
-          </div>
-
-          <div class="subheading mb-3">Diabetes Distress Sept ’25-Nov ‘25</div>
-          <div style="padding-bottom: 2%;"> 
-          We built a voice-based sentiment analysis model that can analyse and predict distress levels from real audio and conversation transcripts from patients dealing with chronic disease, helping improve patient–doctor communication.  
-             <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">Unsupervised Learning</span>
-    <span class="tool-tag">NLTK</span>
-    <span class="tool-tag">scikit-learn</span>
-  </div>
+          <p class="entry__date">May 2023 &ndash; May 2025</p>
         </div>
 
-          
-            <div class="subheading mb-3">Cybersecurity Project May ’25-Jun ‘25</div>
-          <div style="padding-bottom: 2%;"> 
-            Worked with a local government to integrate ADFS into their server environment, enabling secure single sign-on for multiple applications like Exchange. Implemented YubiKey-based multi-factor authentication with ADFS and configured smart card authentication for secure Windows logins. Also, integrated YubiKey-based authentication for Fortinet VPN.
-             <div class="tools-tags">
-    <span class="tool-tag">ADDS</span>
-    <span class="tool-tag">ADFS</span>
-    <span class="tool-tag">YubiKey</span>
-    <span class="tool-tag">Fortinet VPN</span>
-    <span class="tool-tag">Microsoft Exchange</span>
-  </div>
+        <div class="entry">
+          <div class="entry__body">
+            <h3>Assistant Teacher</h3>
+            <p class="entry__org">Sky Public School, Lucknow, India</p>
+            <ul class="bullets">
+              <li>Taught Python, database fundamentals and assembly language to high school
+                students.</li>
+              <li>Responsible for teaching alongside the school's software and hardware
+                solutions.</li>
+            </ul>
           </div>
-
-          <div class="subheading mb-3">Elevator Analysis Oct ’24-Mar ‘25</div>
-          <div style="padding-bottom: 2%;"> 
-            Developed a real-time elevator detection system capable of identifying elevator regions. Leveraged computer vision and machine learning to enhance accuracy and responsiveness, enabling intelligent monitoring and automation in elevator.
-             <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">OpenCV</span>
-    <span class="tool-tag">YOLOv8</span>
-    <span class="tool-tag">OCR</span>
-  </div>
-          </div>
-
-
-          <div class="subheading mb-3">Facial Recognition Jul ’24-Nov ‘24</div>
-          <div style="padding-bottom: 2%;"> 
-            Designed an image scoring system to filter low-quality and misleading facial images before model training. Trained the model using centroids of image embeddings (EfficientNet), enhancing recognition robustness and efficiency.
-             <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">OpenCV</span>
-    <span class="tool-tag">TensorFlow</span>
-    <span class="tool-tag">EfficientNet</span>
-  </div>
-          </div>
-
-
-          <div class="subheading mb-3">Dementia Detection Apr ’24-Jun ‘24</div>
-          <div style="padding-bottom: 2%;"> 
-            Conducted data analysis and model development to enhance early detection and monitoring of age-related functional decline. Designed a classification system to categorize changes in physical function into three classes: improved, similar, and declined. Enhanced dataset size by pairing features, eliminating the need for cross-validation, and ensuring robust training.
-             <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">Machine Learning</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Neural Networks</span>
-
-  </div>
-          </div>
-
-
-          <div class="subheading mb-3">Object Detection and Tracking Jan ’24-Mar ‘24</div>
-        <div style="padding-bottom: 2%;"> 
-          Developed an algorithm to track and count person in a video by calculating 
-          Euclidian distance between centroids of new and previous model using YOLOv8 and finetuning with custom dataset for better results. 
-           <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">OpenCV</span>
-    <span class="tool-tag">YOLOv8</span>
-
-  </div>
+          <p class="entry__date">December 2021 &ndash; July 2022</p>
         </div>
-
-          <div class="subheading mb-3">UMass 3D Model Sep-Dec ‘23</div>
-        <div style="padding-bottom: 2%;"> 
-          A 3D visualization of University of Massachusetts Boston building models using blender and rendering them using three.js with floor maps for each floor for better navigation.
-          It also includes 3D visualization of university from inside.
-          <a href="https://rishankumb.github.io/460/"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a>
-        <div class="tools-tags">
-    <span class="tool-tag">HTML</span>
-    <span class="tool-tag">Blender</span>
-    <span class="tool-tag">Three.js</span>
-    <span class="tool-tag">JavaScript</span>
-    <span class="tool-tag">jQuery</span>
-    <span class="tool-tag">CSS</span>
-
-  </div>
-        </div>
-
-          <div class="subheading mb-3">Predicting Hand Gestures Sep-Nov ‘23</div>
-        <div style="padding-bottom: 2%;"> 
-          Combining multivariate data of 25 dimensions and 51 timesteps into one, then creating atomic units by using clustering for each sample then using different models to train and predict 6 various hand gestures on deck of aircraft carrier.
-        <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Time Series</span>
-    <span class="tool-tag">TensorFlow</span>
-
-  </div>
-        </div>
-
-          <div class="subheading mb-3">FaceRank Website June ’23-Aug ‘23</div>
-          <div style="padding-bottom: 2%;"> 
-            Developed a website MERN stack to collect data of ranking 3 best and 3 worst face images 
-            from a set of images of different users and then used this data to make a classifier to perform this action on its own to improve recognition. 
-          <div class="tools-tags">
-    <span class="tool-tag">React</span>
-    <span class="tool-tag">HTML</span>
-    <span class="tool-tag">JavaScript</span>
-    <span class="tool-tag">jQuery</span>
-    <span class="tool-tag">CSS</span>
-    <span class="tool-tag">Node.js</span>
-    <span class="tool-tag">Express.js</span>
-    <span class="tool-tag">MongoDB</span>
-
-
-  </div>
-          </div>
-
-          <div class="subheading mb-3">Real-State Investment Website Feb ’23-May ‘23</div>
-        <div style="padding-bottom: 2%;"> 
-          Developed a website using Django stack to show properties available for buying on 
-          location and implement a calculator which calculated cash on cash ROI and cashflow along with other relevant details from given data. 
-        <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">Django</span>
-    <span class="tool-tag">Pandas</span>
-    <span class="tool-tag">NumPy</span>
-    <span class="tool-tag">HTML</span>  
-    <span class="tool-tag">JavaScript</span>
-    <span class="tool-tag">jQuery</span>
-    <span class="tool-tag">CSS</span>
-  </div>
-        </div>
-
-        <div class="subheading mb-3">Object Detection Dec ’22-Jan ‘23</div>
-        <div style="padding-bottom: 2%;"> 
-        Developing a model by combining bounding boxes estimation (Regression) and Class 
-        prediction of different targets (Classification) and detect multiple objects in an image using it.
-      <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-  </div>
       </div>
+    </section>
 
-        <div class="subheading mb-3">Forecast Cab Booking, Oct-Dec ‘22</div>
-        <div style="padding-bottom: 2%;">To combine historical usage patterns with publicly available data sources, such as 
-        weather data, to predict if most people will book a cab in a city. Based on this, the company could determine whether to deploy 
-        more or fewer cabs on that specific day. Analysing the dataset and used Feature Engineering to select features by finding 
-        patterns in the data. Fitting various models and manually selecting best parameter using algorithms to perform predictions.
-      <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-
-  </div>  
+    <!-- =================================================== Publications -->
+    <!-- Rendered from data/publications.js. This section and its nav link are
+         removed entirely by main.js while that array is empty. -->
+    <section class="section" id="publications" hidden>
+      <div class="section__inner">
+        <h2 class="section__title">Publications</h2>
+        <ol class="publications" id="publications-list"></ol>
       </div>
-        <div class="subheading mb-3">Auto Insurance Industry, Aug ‘22</div>
-        <div style="padding-bottom: 2%;"> To predict whether an owner will initiate an auto insurance claim in the next year. 
-        Involved feature Engineering, dealing with unbalanced data, determining which model fits best with best hyper parameters.
-      <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
+    </section>
 
-  </div>
-</div>
-
-        <div class="subheading mb-3">Handwritten Character Recognition, Jul ‘22</div>
-        <div style="padding-bottom: 2%;"> The aim of this project is to automatically convert handwritten text into 
-        machine encoded text using deep learning, natural language processing, feature extraction and CTC decode layer.
-      <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-    <span class="tool-tag">OpenCV</span>
-  </div>
-</div>
-
-        <div class="subheading mb-3">Recognition of plates in moving cars, Apr ‘22</div>
-        <div style="padding-bottom: 2%;"> The objective is to detect Moving Cars and License plate in a video file 
-        using OpenCV and object detection using pretrained models.
-      <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-    <span class="tool-tag">OpenCV</span>
-
-  </div>
-</div>
-
-        <div class="subheading mb-3">Recognition of Facemasks, Mar ’22</div>
-        <div style="padding-bottom: 2%;"> The goal is to create a Deep Learning model to detect in real-time whether a person 
-        is wearing a face mask or not by implementing and using different pretrained models like MobileNetV2.
-      <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-    <span class="tool-tag">OpenCV</span>
-    <span class="tool-tag">MobileNetV2</span>
-  </div>
-</div>
-        
-        <div class="subheading mb-3">Property Sale, Oct ’21</div>
-        <div style="padding-bottom: 2%;"> Created a system for purchasing and selling property using Ethereum Solidity
-      <div class="tools-tags">
-    <span class="tool-tag">Solidity</span>
-        </div>
-
-        <div class="subheading mb-3">Ballot Voting System, September 2021</div>
-        <div style="padding-bottom: 2%;">Created a voting algorithm using Ethereum Solidity
-      <div class="tools-tags">
-    <span class="tool-tag">Solidity</span>
-        </div>
-
-        <div class="subheading mb-3">Redesign Marvel Site, May ‘21</div>
-        <!-- <div style="padding-bottom: 2%;"> Created a website using Html, CSS, JavaScript and jQuery
-        <a href="https://sankalpvaish.github.io/Website/MARVEL/marvel.html"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a></div> -->
-        <div class="subheading mb-3">Browsing and Purchasing Cars, Apr ‘21</div>
-        <div style="padding-bottom: 2%;"> Created a website using Html, CSS, JavaScript and jQuery
-        <a href="https://sankalpvaish.github.io/Website/Sankalp/index.html"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a>
-      <div class="tools-tags">
-    <span class="tool-tag">HTML</span>  
-    <span class="tool-tag">JavaScript</span>
-    <span class="tool-tag">jQuery</span>
-    <span class="tool-tag">CSS</span>
-  </div>
+    <!-- ============================================== Professional service -->
+    <!-- Rendered from data/service.js; removed by main.js while that array
+         is empty, same as Publications. -->
+    <section class="section" id="service" hidden>
+      <div class="section__inner">
+        <h2 class="section__title">Professional Service</h2>
+        <ul class="service-list" id="service-list"></ul>
       </div>
-        <!-- <div> https://sankalpvaish.github.io/Website/Sankalp/index.html</div> -->
-        <div class="subheading mb-3">Housing Prices Competition, Sep ’20</div>
-        <div style="padding-bottom: 2%;"> For predicting the final price of each home and to overcome the problems of 
-        missing data, using advanced regression techniques like random forest and gradient boost
-      <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-  </div>
+    </section>
+
+    <!-- ======================================================= Projects -->
+    <section class="section" id="projects">
+      <div class="section__inner">
+        <h2 class="section__title">Projects</h2>
+
+        <ul class="projects" id="projects-featured"></ul>
+
+        <details class="archive">
+          <summary class="archive__toggle">
+            More projects <span class="archive__count" id="archive-count"></span>
+          </summary>
+          <ul class="archive__list" id="projects-archive"></ul>
+        </details>
       </div>
-        <div class="subheading mb-3">Covid Trend, Aug ‘20</div>
-        <div style="padding-bottom: 2%;"> Analysed data of different countries and predicted trends in their patient's rate
-          <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
+    </section>
 
-  </div>
+    <!-- ====================================================== Education -->
+    <section class="section" id="education">
+      <div class="section__inner">
+        <h2 class="section__title">Education</h2>
+
+        <div class="entry">
+          <div class="entry__body">
+            <h3>University of Massachusetts Boston</h3>
+            <p class="entry__org">PhD, Computer Science</p>
+            <p class="entry__detail">GPA 4.0</p>
+          </div>
+          <p class="entry__date">September 2024 &ndash; May 2027</p>
         </div>
 
-        <div class="subheading mb-3">Translation of DNA to Protein, Aug ‘20</div>
-        <div style="padding-bottom: 2%;"> Separated DNA sequence to amino acid code and then to protein.
-          <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-  </div>
+        <div class="entry">
+          <div class="entry__body">
+            <h3>University of Massachusetts Boston</h3>
+            <p class="entry__org">Master of Science, Computer Science</p>
+            <p class="entry__detail">GPA 4.0</p>
+          </div>
+          <p class="entry__date">September 2022 &ndash; May 2024</p>
         </div>
 
-        <div class="subheading mb-3">Reading Digital Books, Jul ‘20</div>
-        <div style="padding-bottom: 2%;"> Decoded encrypted books to find its author, language, title, unique words.
-          <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-  </div>
-        </div>
-        
-        <div class="subheading mb-3">Bird Tracking, Jul ‘20</div> 
-        <div style="padding-bottom: 2%;">Designed a bird tracking system with data of their positions in latitude and longitude and 
-          plots them to see the trend. The project predicted the routes various birds took during different time of year.
-        <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-  </div></div>
-
-        <div class="subheading mb-3">Connect Dot Game, Jul ‘20</div>
-        <div style="padding-bottom: 2%;"> Built a reasonably intelligent agent with the correct algorithm. The agent assumes that 
-          its opponent plays optimally (with respect to the heuristic and using a game tree of limited depth).
-        <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-  </div></div>
-
-        <div class="subheading mb-3">Cleaning for Date, Jun ‘20</div>
-        <div style="padding-bottom: 2%;"> Worked with messy medical data, used regular expression to extract relevant information 
-        from the data (identify all different date variants) and properly normalized and sorted dates.
-<div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-  </div>
+        <div class="entry">
+          <div class="entry__body">
+            <h3>National Institute of Technology, India</h3>
+            <p class="entry__org">Postgraduate Diploma</p>
+            <p class="entry__detail">Machine Learning and Artificial Intelligence &middot; GPA 4.0</p>
+          </div>
+          <p class="entry__date">September 2021 &ndash; August 2022</p>
         </div>
 
-        <div class="subheading mb-3">Creating a Spelling Recommender, Jun ‘20-</div>
-        <div style="padding-bottom: 2%;"> Created different spelling recommenders (based on shortest distance), 
-        that takes a misspelled word and recommends a correctly word using Natural Language Toolkit.
-      <div class="tools-tags">
-    <span class="tool-tag">Python</span>
-    <span class="tool-tag">scikit-learn</span>
-    <span class="tool-tag">Machine Learning</span>
-  </div>
+        <div class="entry">
+          <div class="entry__body">
+            <h3>National Post Graduate College, India</h3>
+            <p class="entry__org">Postgraduate Diploma</p>
+            <p class="entry__detail">Remote Sensing and Geographical Information Systems &middot;
+              GPA 3.5</p>
+          </div>
+          <p class="entry__date">October 2021 &ndash; June 2022</p>
+        </div>
+
+        <div class="entry">
+          <div class="entry__body">
+            <h3>University of Lucknow</h3>
+            <p class="entry__org">Bachelor of Science</p>
+            <p class="entry__detail">Computer Science and Statistics &middot; GPA 3.3</p>
+          </div>
+          <p class="entry__date">July 2018 &ndash; June 2021</p>
+        </div>
       </div>
-        </div>
-        
+    </section>
 
-        </div>
-      </section>
+    <!-- ========================================================= Skills -->
+    <section class="section" id="skills">
+      <div class="section__inner">
+        <h2 class="section__title">Skills</h2>
+        <div class="skill-groups" id="skill-groups"></div>
+      </div>
+    </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <!-- <p>Apart from being a web developer, I enjoy most of my time being outdoors. I also teaching and teach whenever I get opurtunity</p> -->
-             <!-- In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p> -->
-          <!-- <p class="mb-0">I follow a number of sci-fi and fantasy genre movies and television shows and novels, I also like cooking, and I spend a large amount of my free time exploring the latest technolgy advancements.</p> -->
-          <p>As a web developer with a passion for the outdoors, I find joy in balancing my technical expertise with a love for teaching. 
-            Embracing opportunities to share my knowledge, I contribute to the learning community. 
-            Beyond the digital realm, I immerse myself in the worlds of sci-fi and fantasy through movies and novels, sparking creativity and expanding my imaginative horizons.</p>
+    <!-- ======================================== Awards & certifications -->
+    <section class="section" id="awards">
+      <div class="section__inner">
+        <h2 class="section__title">Awards &amp; Certifications</h2>
 
-            <p class="mb-0">Away from the screen, I am a culinary enthusiast, engaging in the art of cooking during my leisure hours. 
-              I also spend large amount of my time staying abreast of the latest technological advancements in the world. 
-              Additionally, my penchant for puzzle-solving not only sharpens my problem-solving skills but also adds a playful dimension to my approach to challenges.</p>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
+        <div class="award-group">
+          <h3 class="award-group__title">Awards &amp; Honors</h3>
+          <ul class="award-list">
             <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Received Public Choice Award for AI Hackathon hosted by UMASS Boston for Diabetes Distress project, October 31, 2025
-              <a href="https://stampleyresearchgroup.com/ai-diabetes-hackathon-team/"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+              Public Choice Award, AI Hackathon hosted by UMass Boston, for the Diabetes Distress
+              project
+              <a class="ext" href="https://stampleyresearchgroup.com/ai-diabetes-hackathon-team/"
+                target="_blank" rel="noopener noreferrer">
+                View
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span class="visually-hidden">&mdash; Public Choice Award</span>
+              </a>
+              <span class="award-date">October 31, 2025</span>
             </li>
             <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Received grade A in Blockchain Professional Certificate by Edureka, November 17, 2021. <a href="https://www.edureka.co/my-certificate/5083c8b10b3de7e689b92cad817b6569"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a></li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+              100% in Computer Science, ICSE Board Examinations
+              <span class="award-date">2016</span>
+            </li>
             <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              100% in HTML, CSS, JavaScript certificate with by Johns Hopkins University through Coursera, June 26, 2021. <a href="https://www.coursera.org/account/accomplishments/verify/3XCJGFGY7Q7A"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a></li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+              Gold medal, 14th National Cyber Olympiad
+              <span class="award-date">2015</span>
+            </li>
             <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              <!-- 1<sup>st</sup> -->
-              91.2% in Applied Machine Learning certificate from University of Michigan through Coursera, August 29, 2020. <a href="https://www.coursera.org/account/accomplishments/verify/7Q7DAWM3CWMF"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a></li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              <!-- 1<sup>st</sup> -->
-              96.16% in Applied Text Mining certificate from University of Michigan through Coursera, Sept 25, 2020. <a href="https://www.coursera.org/account/accomplishments/verify/RMVCYXPBQA37"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a></li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              <!-- 2<sup>nd</sup> -->
-              96.58% in Introduction to Data Science certificate from University of Michigan through Coursera, Aug 17, 2020. <a href="https://www.coursera.org/account/accomplishments/verify/Z4M4JB32LYTM"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a></li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              <!-- 1<sup>st</sup> -->
-              Secured 91.6% in Neural Networks and Deep Learning certificate through Coursera, August 12, 2020. <a href="https://www.coursera.org/account/accomplishments/verify/RWDBY2TLC5KK"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a></li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              <!-- 3<sup>rd</sup> -->
-              Received 96.16% marks in What is Data Science certificate by IBM through Coursera, July 20, 2020. <a href="https://www.coursera.org/account/accomplishments/verify/UCJERW8743XQ"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a></li>
-              <li>
-                <i class="fa-li fa fa-trophy text-warning"></i>
-                Achieved 100% marks in Introduction to AI certificate by IBM through Coursera, June 12, 2021<a href="https://www.coursera.org/account/accomplishments/verify/ECEKB5B3QX9F"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a></li>
-              <li>
-                <li>
-                  <i class="fa-li fa fa-trophy text-warning"></i>
-                  Received a certificate for obtaining 100% marks in ICSE Board Examinations in Computer Science, 2016</li>
-                <li>
-                  <li>
-                    <i class="fa-li fa fa-trophy text-warning"></i>
-                    Won a gold medal for 14th National Cyber Olympiad, 2015</li>
-                  <li>
-                    <li>
-                      <i class="fa-li fa fa-trophy text-warning"></i>
-                      Graduated in Brainobrain skill development programme and won many certificates and gold and silver medals in various competitions, 2008-2012</li>
-                    <li>
-              
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+              Graduated the Brainobrain skill development programme, with gold and silver medals
+              across various competitions
+              <span class="award-date">2008 &ndash; 2012</span>
+            </li>
           </ul>
         </div>
-      </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Certificates">
-        <div class="my-auto">
-          <h2 class="mb-5">Certifications</h2>
-          <ul class="fa-ul mb-0">
+        <div class="award-group">
+          <h3 class="award-group__title">Certifications</h3>
+          <ul class="award-list">
             <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              <!-- 2<sup>nd</sup> -->
-              Completed certificate for Object-Oriented Programming in Java through LinkedIn Learning, Sept 15, 2022. <a href="https://www.linkedin.com/learning/certificates/dcdb7bb9a4d7912157b72e2ac2310e94bb09bbf8c41a14a45765b0922b2f908b"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a></li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Object-Oriented Programming in Java &mdash; LinkedIn Learning
+              <a class="ext"
+                href="https://www.linkedin.com/learning/certificates/dcdb7bb9a4d7912157b72e2ac2310e94bb09bbf8c41a14a45765b0922b2f908b"
+                target="_blank" rel="noopener noreferrer">
+                Verify
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span class="visually-hidden">&mdash; Object-Oriented Programming in Java</span>
+              </a>
+              <span class="award-date">September 15, 2022</span>
+            </li>
             <li>
-              <li>
-                <i class="fa-li fa fa-trophy text-warning"></i>
-                <!-- 2<sup>nd</sup> -->
-                Completed certificate for Data Structures in Java through LinkedIn Learning, Sept 12, 2022. <a href="https://www.linkedin.com/learning/certificates/c0b38cf4f2da361a97089e6c8df606be3bafc3913f5db2b24f362568dcc93167"><img src = "box-arrow-up-right.svg" alt="Show Creds"/></a></li>
-              <li>
-                <li>
-                  <i class="fa-li fa fa-trophy text-warning"></i>
-                  <!-- 2<sup>nd</sup> -->
-                  Completed certificate for Deep Learning, ML, Python, and Pandas through Kaggle.com, August 2, 2020.</li>
-                <li>
-
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Data Structures in Java &mdash; LinkedIn Learning
+              <a class="ext"
+                href="https://www.linkedin.com/learning/certificates/c0b38cf4f2da361a97089e6c8df606be3bafc3913f5db2b24f362568dcc93167"
+                target="_blank" rel="noopener noreferrer">
+                Verify
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span class="visually-hidden">&mdash; Data Structures in Java</span>
+              </a>
+              <span class="award-date">September 12, 2022</span>
+            </li>
             <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Participated in online workshop on Data Science by BSE, July 17, 2020.</li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Blockchain Professional Certificate (Grade A) &mdash; Edureka
+              <a class="ext"
+                href="https://www.edureka.co/my-certificate/5083c8b10b3de7e689b92cad817b6569"
+                target="_blank" rel="noopener noreferrer">
+                Verify
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span class="visually-hidden">&mdash; Blockchain Professional Certificate</span>
+              </a>
+              <span class="award-date">November 17, 2021</span>
+            </li>
             <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Participated in online workshop on Data Analysis and Statistical Computing by BSE, May 27, 2020.</li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Introduction to Artificial Intelligence (100%) &mdash; IBM via Coursera
+              <a class="ext"
+                href="https://www.coursera.org/account/accomplishments/verify/ECEKB5B3QX9F"
+                target="_blank" rel="noopener noreferrer">
+                Verify
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span class="visually-hidden">&mdash; Introduction to Artificial
+                  Intelligence</span>
+              </a>
+              <span class="award-date">June 12, 2021</span>
+            </li>
             <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              <!-- 1<sup>st</sup> -->
-              Attended an online workshop in Python organised by Spoken Tutorial, IIT Bombay, May 1-May 5, 2020.</li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              HTML, CSS and JavaScript (100%) &mdash; Johns Hopkins University via Coursera
+              <a class="ext"
+                href="https://www.coursera.org/account/accomplishments/verify/3XCJGFGY7Q7A"
+                target="_blank" rel="noopener noreferrer">
+                Verify
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span class="visually-hidden">&mdash; HTML, CSS and JavaScript</span>
+              </a>
+              <span class="award-date">June 26, 2021</span>
+            </li>
             <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              <!-- 1<sup>st</sup> -->
-              Participated in a two-day workshop on HTML, CSS, AND PHP held in Lucknow University, Feb 27, 2020. </li>
-            
-            
-              
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Applied Text Mining (96.16%) &mdash; University of Michigan via Coursera
+              <a class="ext"
+                href="https://www.coursera.org/account/accomplishments/verify/RMVCYXPBQA37"
+                target="_blank" rel="noopener noreferrer">
+                Verify
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span class="visually-hidden">&mdash; Applied Text Mining</span>
+              </a>
+              <span class="award-date">September 25, 2020</span>
+            </li>
+            <li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Applied Machine Learning (91.2%) &mdash; University of Michigan via Coursera
+              <a class="ext"
+                href="https://www.coursera.org/account/accomplishments/verify/7Q7DAWM3CWMF"
+                target="_blank" rel="noopener noreferrer">
+                Verify
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span class="visually-hidden">&mdash; Applied Machine Learning</span>
+              </a>
+              <span class="award-date">August 29, 2020</span>
+            </li>
+            <li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Introduction to Data Science (96.58%) &mdash; University of Michigan via Coursera
+              <a class="ext"
+                href="https://www.coursera.org/account/accomplishments/verify/Z4M4JB32LYTM"
+                target="_blank" rel="noopener noreferrer">
+                Verify
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span class="visually-hidden">&mdash; Introduction to Data Science</span>
+              </a>
+              <span class="award-date">August 17, 2020</span>
+            </li>
+            <li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Neural Networks and Deep Learning (91.6%) &mdash; Coursera
+              <a class="ext"
+                href="https://www.coursera.org/account/accomplishments/verify/RWDBY2TLC5KK"
+                target="_blank" rel="noopener noreferrer">
+                Verify
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span class="visually-hidden">&mdash; Neural Networks and Deep Learning</span>
+              </a>
+              <span class="award-date">August 12, 2020</span>
+            </li>
+            <li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              What is Data Science (96.16%) &mdash; IBM via Coursera
+              <a class="ext"
+                href="https://www.coursera.org/account/accomplishments/verify/UCJERW8743XQ"
+                target="_blank" rel="noopener noreferrer">
+                Verify
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                <span class="visually-hidden">&mdash; What is Data Science</span>
+              </a>
+              <span class="award-date">July 20, 2020</span>
+            </li>
+            <li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Deep Learning, Machine Learning, Python and Pandas &mdash; Kaggle
+              <span class="award-date">August 2, 2020</span>
+            </li>
           </ul>
         </div>
-      </section>
 
-    </div>
+        <div class="award-group">
+          <h3 class="award-group__title">Workshops</h3>
+          <ul class="award-list">
+            <li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Data Science workshop &mdash; Bombay Stock Exchange
+              <span class="award-date">July 17, 2020</span>
+            </li>
+            <li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Data Analysis and Statistical Computing workshop &mdash; Bombay Stock Exchange
+              <span class="award-date">May 27, 2020</span>
+            </li>
+            <li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Python workshop &mdash; Spoken Tutorial, IIT Bombay
+              <span class="award-date">May 1 &ndash; 5, 2020</span>
+            </li>
+            <li>
+              <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Two-day workshop on HTML, CSS and PHP &mdash; University of Lucknow
+              <span class="award-date">February 27, 2020</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ====================================================== Interests -->
+    <section class="section" id="interests">
+      <div class="section__inner">
+        <h2 class="section__title">Interests</h2>
+        <!--
+          DRAFT — the previous text opened "As a web developer with a passion
+          for the outdoors", which was left over from the template and
+          contradicted the research focus above. Rewrite in your own voice.
+        -->
+        <p>
+          Teaching is the part of this work I would keep if I had to pick one. Explaining a data
+          structure to someone seeing it for the first time forces a clarity that research writing
+          rarely demands, and I have found it makes me better at both.
+        </p>
+        <p>
+          Away from the screen I cook seriously enough that it counts as a hobby, read a lot of
+          science fiction and fantasy, and follow developments in machine learning closely. I also
+          have a long-standing habit of puzzle-solving &mdash; much the same appeal as a research
+          problem, which is the moment the underlying structure finally becomes visible.
+        </p>
+      </div>
+    </section>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  </main>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+  <footer class="footer">
+    <p>&copy; <span id="year">2026</span> Sankalp Vaish &middot; Boston, Massachusetts</p>
+  </footer>
 
-  </body>
+  <!-- Content data. Plain scripts, not modules, so the page still works when
+       opened directly from disk. Must load before main.js. -->
+  <script src="data/projects.js"></script>
+  <script src="data/skills.js"></script>
+  <script src="data/publications.js"></script>
+  <script src="data/service.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sankalp Vaish",
+    "url": "https://sankalpvaish.github.io/Portfolio/",
+    "image": "https://sankalpvaish.github.io/Portfolio/img/profile.jpg",
+    "email": "mailto:sankalp.vaish14@gmail.com",
+    "telephone": "+1-857-395-4370",
+    "jobTitle": "PhD Candidate in Computer Science",
+    "description": "Researcher in multimodal machine learning for health, focused on contactless early detection of cognitive decline and mental health conditions.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Boston",
+      "addressRegion": "MA",
+      "addressCountry": "US"
+    },
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Massachusetts Boston"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Massachusetts Boston" },
+      { "@type": "CollegeOrUniversity", "name": "National Institute of Technology, India" },
+      { "@type": "CollegeOrUniversity", "name": "University of Lucknow" }
+    ],
+    "knowsAbout": [
+      "Machine Learning",
+      "Multimodal Learning",
+      "Computer Vision",
+      "Natural Language Processing",
+      "Large Language Models",
+      "Digital Health"
+    ],
+    "sameAs": [
+      "https://github.com/SankalpVaish",
+      "https://in.linkedin.com/in/sankalp-vaish-384942208"
+    ]
+  }
+  </script>
+
+</body>
 
 </html>
