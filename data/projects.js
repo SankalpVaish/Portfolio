@@ -15,7 +15,7 @@ const FEATURED_PROJECTS = [
     summary:
       "A privacy-preserving Retrieval-Augmented Generation system that indexes Gmail messages into a local vector database and answers natural-language questions over them using a locally hosted LLM — no email content leaves the machine.",
     tags: ["Python", "LLaMA 3", "RAG", "ChromaDB", "Ollama", "Google APIs"],
-    links: { code: "", demo: "https://sankalpvaish.github.io/Gmail-RAG-Assistant/", writeup: "" }, // TODO: add code repo URL
+    links: { code: "https://github.com/SankalpVaish/Gmail-RAG-Assistant", demo: "", writeup: "https://sankalpvaish.github.io/Gmail-RAG-Assistant/" },
   },
   {
     title: "ML Model Training & Analytics Platform",
@@ -23,7 +23,7 @@ const FEATURED_PROJECTS = [
     summary:
       "A full-stack Django application for end-to-end data analysis, preprocessing and model training. Supports interactive visualizations, configurable train–test splits and scaling, multiple algorithms, and side-by-side comparison of run results.",
     tags: ["Python", "Django", "scikit-learn", "Plotly", "Pandas", "NumPy", "JavaScript"],
-    links: { code: "", demo: "https://sankalpvaish.github.io/Django_Graphs/", writeup: "" }, // TODO: add repo URL
+    links: { code: "https://github.com/SankalpVaish/Django_Graphs", demo: "", writeup: "https://sankalpvaish.github.io/Django_Graphs/" },
   },
   {
     title: "Dementia Detection via Alexa Interactions",
@@ -74,7 +74,7 @@ const FEATURED_PROJECTS = [
     summary:
       "An interactive 3D visualization of UMass Boston's buildings, modelled in Blender and rendered with Three.js. Includes per-floor maps for navigation and interior walkthroughs of the campus.",
     tags: ["Three.js", "Blender", "JavaScript", "HTML", "CSS"],
-    links: { code: "", demo: "https://rishankumb.github.io/460/", writeup: "" },
+    links: { code: "https://github.com/rishankumb/460", demo: "https://rishankumb.github.io/460/", writeup: "" },
   },
 ];
 
@@ -132,7 +132,7 @@ const ARCHIVE_PROJECTS = [
     summary:
       "A Django application listing properties available to buy by location, with a calculator for cash-on-cash ROI and cashflow derived from the underlying property data.",
     tags: ["Python", "Django", "Pandas", "NumPy", "JavaScript"],
-    links: {},
+    links: { code: "https://github.com/Sankalp-Vaish/CS682" },
   },
   {
     title: "Object Detection (Regression + Classification)",
