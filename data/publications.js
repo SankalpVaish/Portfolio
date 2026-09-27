@@ -68,6 +68,6 @@ const PUBLICATIONS = [
     venue:
       "IEEE International Conference on E-health Networking, Application & Services (Healthcom)",
     year: 2024,
-    links: {},
+    links: { doi: "https://ieeexplore.ieee.org/abstract/document/10880842" },
   },
 ];

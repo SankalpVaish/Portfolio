@@ -15,7 +15,7 @@ const FEATURED_PROJECTS = [
     summary:
       "A privacy-preserving Retrieval-Augmented Generation system that indexes Gmail messages into a local vector database and answers natural-language questions over them using a locally hosted LLM — no email content leaves the machine.",
     tags: ["Python", "LLaMA 3", "RAG", "ChromaDB", "Ollama", "Google APIs"],
-    links: { code: "", demo: "", writeup: "" }, // TODO: add repo URL
+    links: { code: "", demo: "https://sankalpvaish.github.io/Gmail-RAG-Assistant/", writeup: "" }, // TODO: add code repo URL
   },
   {
     title: "ML Model Training & Analytics Platform",
@@ -23,7 +23,7 @@ const FEATURED_PROJECTS = [
     summary:
       "A full-stack Django application for end-to-end data analysis, preprocessing and model training. Supports interactive visualizations, configurable train–test splits and scaling, multiple algorithms, and side-by-side comparison of run results.",
     tags: ["Python", "Django", "scikit-learn", "Plotly", "Pandas", "NumPy", "JavaScript"],
-    links: { code: "", demo: "", writeup: "" }, // TODO: add repo URL
+    links: { code: "", demo: "https://sankalpvaish.github.io/Django_Graphs/", writeup: "" }, // TODO: add repo URL
   },
   {
     title: "Dementia Detection via Alexa Interactions",
@@ -100,10 +100,7 @@ const ARCHIVE_PROJECTS = [
     summary:
       "Data analysis and model development for early detection of age-related functional decline. Built a classifier categorising change in physical function as improved, similar or declined, expanding the dataset by pairing features to remove the need for cross-validation.",
     tags: ["Python", "scikit-learn", "Neural Networks"],
-    // TODO: relates to "Clinical Geriatric Functional Assessment using Wearable
-    // Sensing and Machine Learning" (Healthcom 2024) — already published, so a
-    // DOI should exist for this one.
-    links: { paper: "" },
+    links: { paper: "https://ieeexplore.ieee.org/abstract/document/10880842" },
   },
   {
     title: "Object Detection and Tracking",
