@@ -74,8 +74,8 @@
     <nav class="sidebar__nav" id="primary-nav" data-open="false" aria-label="Sections">
       <ul class="nav-list">
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li id="nav-publications" hidden><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li id="nav-service" hidden><a href="#service">Service</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
@@ -101,20 +101,25 @@
           <a href="mailto:sankalp.vaish14@gmail.com">sankalp.vaish14@gmail.com</a>
         </p>
 
-        <!--
-          DRAFT — this replaces the previous generic summary. Edit freely; it
-          should sound like you. The original read "Enthusiastic artificial
-          intelligence thinker looking to deliver cutting-edge Innovative
-          approaches", which undersold the actual lab work below.
-        -->
         <p class="hero__bio">
-          I research multimodal machine learning for health at the MobCP Lab, combining
-          video, audio and language signals &mdash; facial action units, prosodic cues and
-          linguistic features &mdash; to build contactless, home-based screening tools for
-          early cognitive decline and mental health assessment. Alongside research I teach
-          data structures and programming, and I build systems that put modern ML into
-          software people can actually use.
+          I am a Computer Science PhD candidate at UMass Boston researching multimodal machine
+          learning for health. At the MobCP Lab I combine video, audio and language into models that detect early
+          cognitive decline and depression from ordinary conversation, working toward contactless
+          screening that runs in someone's home rather than a clinic. Alongside it I
+          build applied ML systems in production (retrieval-augmented generation, LLM
+          integration and workflow automation) and teach data structures and programming to
+          undergraduates.
         </p>
+
+        <a class="hero__award" href="https://stampleyresearchgroup.com/ai-diabetes-hackathon-team/"
+          target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="6" />
+            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+          </svg>
+          Public Choice Award &mdash; UMass Boston AI Hackathon, 2025
+        </a>
 
         <ul class="social">
           <li>
@@ -134,6 +139,17 @@
                   d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-1.94c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .96-.31 3.16 1.18a10.9 10.9 0 0 1 5.75 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12A11.5 11.5 0 0 0 12 .5z" />
               </svg>
               GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=2VVrqcUAAAAJ"
+              target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10 12 5 2 10l10 5 10-5z" />
+                <path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5" />
+              </svg>
+              Google Scholar
             </a>
           </li>
           <li>
@@ -159,6 +175,18 @@
             </a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!-- =================================================== Publications -->
+    <!-- Placed directly after the hero: five IEEE papers are the strongest
+         credential on this page, so they should not sit below the fold.
+         Rendered from data/publications.js; this section and its nav link are
+         removed entirely by main.js while that array is empty. -->
+    <section class="section" id="publications" hidden>
+      <div class="section__inner">
+        <h2 class="section__title">Publications</h2>
+        <ol class="publications" id="publications-list"></ol>
       </div>
     </section>
 
@@ -196,7 +224,7 @@
                 careers pages.</li>
             </ul>
           </div>
-          <p class="entry__date">June 2026 &ndash; Present</p>
+          <p class="entry__date">June 2026 &ndash; December 2026 (expected)</p>
         </div>
 
         <div class="entry">
@@ -267,15 +295,55 @@
             <h3>Research Assistant</h3>
             <p class="entry__org">Visual Attention Lab, UMass Boston</p>
             <ul class="bullets">
-              <li>Improved image quality for face recognition by developing filters that detect blur
-                and low contrast.</li>
-              <li>Built a web application to collect user-labelled data, then used that data to train
-                a classifier to perform the same judgement automatically.</li>
-              <li>Extracted frames and annotated humans to create training data, improving human
-                detection in video analysis.</li>
-              <li>Fine-tuned YOLOv8 for improved object and human detection in security camera
-                footage.</li>
+              <li>Developed image-quality filters that automatically flag blur and low contrast,
+                screening degraded frames out of the face recognition pipeline to improve downstream
+                accuracy.</li>
+              <li>Built a frame annotation tool for labelling objects in video, producing the
+                training datasets to improve object detection models for video analytics.</li>
+              <li>Fine-tuned YOLOv8 on custom annotated datasets, improving object and human
+                detection in low-quality security camera footage.</li>
+              <li>Applied knowledge distillation to transfer detection capability from a Grounding
+                DINO teacher model into a compact student model, reducing inference cost while
+                preserving accuracy for real-time deployment.</li>
             </ul>
+
+            <p class="collab">In collaboration with
+              <a href="https://blub0x.com" target="_blank" rel="noopener noreferrer">Blub0x</a>
+            </p>
+
+            <div class="subentry">
+              <p class="subentry__title">Elevator Analysis &amp; Detection System
+                <span>&mdash; Oct 2024 &ndash; Mar 2025</span></p>
+              <ul class="bullets">
+                <li>Built a real-time system that detects elevator regions, available floor space,
+                  current floor, direction of movement and door status from video, combining computer
+                  vision and machine learning for intelligent building monitoring.</li>
+              </ul>
+              <ul class="tags">
+                <li class="tag">Python</li>
+                <li class="tag">OpenCV</li>
+                <li class="tag">YOLOv8</li>
+                <li class="tag">OCR</li>
+              </ul>
+            </div>
+
+            <div class="subentry">
+              <p class="subentry__title">FaceRank
+                <span>&mdash; Jun 2023 &ndash; Aug 2023</span></p>
+              <ul class="bullets">
+                <li>Built a MERN-stack web application that collects human rankings of the best and
+                  worst facial images from a set, then trained a classifier on that data to replicate
+                  the judgement automatically &mdash; ensuring only high-quality images reach
+                  training and preventing model corruption.</li>
+              </ul>
+              <ul class="tags">
+                <li class="tag">React</li>
+                <li class="tag">Node.js</li>
+                <li class="tag">Express.js</li>
+                <li class="tag">MongoDB</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+            </div>
           </div>
           <p class="entry__date">May 2023 &ndash; May 2025</p>
         </div>
@@ -293,16 +361,6 @@
           </div>
           <p class="entry__date">December 2021 &ndash; July 2022</p>
         </div>
-      </div>
-    </section>
-
-    <!-- =================================================== Publications -->
-    <!-- Rendered from data/publications.js. This section and its nav link are
-         removed entirely by main.js while that array is empty. -->
-    <section class="section" id="publications" hidden>
-      <div class="section__inner">
-        <h2 class="section__title">Publications</h2>
-        <ol class="publications" id="publications-list"></ol>
       </div>
     </section>
 
@@ -343,7 +401,7 @@
             <p class="entry__org">PhD, Computer Science</p>
             <p class="entry__detail">GPA 4.0</p>
           </div>
-          <p class="entry__date">September 2024 &ndash; May 2027</p>
+          <p class="entry__date">September 2024 &ndash; Expected May 2027</p>
         </div>
 
         <div class="entry">
@@ -795,7 +853,8 @@
     ],
     "sameAs": [
       "https://github.com/SankalpVaish",
-      "https://in.linkedin.com/in/sankalp-vaish-384942208"
+      "https://in.linkedin.com/in/sankalp-vaish-384942208",
+      "https://scholar.google.com/citations?hl=en&user=2VVrqcUAAAAJ"
     ]
   }
   </script>

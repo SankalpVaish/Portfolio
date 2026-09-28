@@ -565,6 +565,26 @@ ul {
   margin-top: 1.25rem;
 }
 
+/* Labels the sub-entries that follow as partner work, not lab-only work. */
+.collab {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+
+.collab a {
+  color: var(--accent);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.collab + .subentry {
+  margin-top: 0.75rem;
+}
+
 .subentry__title {
   font-family: var(--font-display);
   font-size: 0.95rem;
@@ -661,7 +681,8 @@ ul {
   max-width: none;
 }
 
-.card__award {
+.card__award,
+.hero__award {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -675,9 +696,21 @@ ul {
   font-weight: 600;
 }
 
-.card__award svg {
+.card__award svg,
+.hero__award svg {
   width: 0.9rem;
   height: 0.9rem;
+}
+
+/* Same pill, surfaced in the hero so the award is visible above the fold. */
+.hero__award {
+  margin: 0 0 2rem;
+  text-decoration: none;
+}
+
+.hero__award:hover {
+  background: var(--accent);
+  color: var(--bg);
 }
 
 .card .tags {

@@ -11,7 +11,7 @@
 const FEATURED_PROJECTS = [
   {
     title: "Gmail RAG Assistant",
-    period: "Dec 2025 – Jan 2026",
+    period: "Dec 2025 – Mar 2026",
     summary:
       "A privacy-preserving Retrieval-Augmented Generation system that indexes Gmail messages into a local vector database and answers natural-language questions over them using a locally hosted LLM — no email content leaves the machine.",
     tags: ["Python", "LLaMA 3", "RAG", "ChromaDB", "Ollama", "Google APIs"],
@@ -19,7 +19,7 @@ const FEATURED_PROJECTS = [
   },
   {
     title: "ML Model Training & Analytics Platform",
-    period: "2025 – Jan 2026", // TODO: confirm start month
+    period: "Nov 2025 – Jan 2026", // TODO: confirm start month
     summary:
       "A full-stack Django application for end-to-end data analysis, preprocessing and model training. Supports interactive visualizations, configurable train–test splits and scaling, multiple algorithms, and side-by-side comparison of run results.",
     tags: ["Python", "Django", "scikit-learn", "Plotly", "Pandas", "NumPy", "JavaScript"],
@@ -60,14 +60,18 @@ const FEATURED_PROJECTS = [
     tags: ["ADDS", "ADFS", "YubiKey", "Fortinet VPN", "Microsoft Exchange"],
     links: { code: "", demo: "", writeup: "" },
   },
-  {
-    title: "Elevator Analysis",
-    period: "Oct 2024 – Mar 2025",
-    summary:
-      "A real-time elevator detection system that identifies elevator regions from video, combining computer vision and machine learning to improve accuracy and responsiveness for intelligent monitoring and automation.",
-    tags: ["Python", "OpenCV", "YOLOv8", "OCR"],
-    links: { code: "", demo: "", writeup: "" }, // TODO: add repo URL
-  },
+  /*
+   * Moved into the Visual Attention Lab / Blub0x experience entry in index.html.
+   * Uncomment to show it as a project card here again.
+   */
+  // {
+  //   title: "Elevator Analysis",
+  //   period: "Oct 2024 – Mar 2025",
+  //   summary:
+  //     "A real-time elevator detection system that identifies elevator regions from video, combining computer vision and machine learning to improve accuracy and responsiveness for intelligent monitoring and automation.",
+  //   tags: ["Python", "OpenCV", "YOLOv8", "OCR"],
+  //   links: { code: "", demo: "", writeup: "" },
+  // },
   {
     title: "UMass Boston 3D Campus Model",
     period: "Sep 2023 – Dec 2023",
@@ -118,14 +122,18 @@ const ARCHIVE_PROJECTS = [
     tags: ["Python", "scikit-learn", "TensorFlow", "Time Series"],
     links: {},
   },
-  {
-    title: "FaceRank",
-    period: "Jun 2023 – Aug 2023",
-    summary:
-      "A MERN-stack web app collecting human rankings of the three best and three worst facial images from a set, then using that data to train a classifier to replicate the judgement automatically.",
-    tags: ["React", "Node.js", "Express.js", "MongoDB", "JavaScript"],
-    links: {},
-  },
+  /*
+   * Moved into the Visual Attention Lab / Blub0x experience entry in index.html.
+   * Uncomment to show it as a project card here again.
+   */
+  // {
+  //   title: "FaceRank",
+  //   period: "Jun 2023 – Aug 2023",
+  //   summary:
+  //     "A MERN-stack web app collecting human rankings of the three best and three worst facial images from a set, then using that data to train a classifier to replicate the judgement automatically.",
+  //   tags: ["React", "Node.js", "Express.js", "MongoDB", "JavaScript"],
+  //   links: {},
+  // },
   {
     title: "Real Estate Investment Website",
     period: "Feb 2023 – May 2023",
