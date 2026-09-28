@@ -26,13 +26,16 @@ const SKILL_GROUPS = [
   {
     group: "Research Areas",
     items: [
-      { name: "Large Language Models" },
-      { name: "Vision-Language Models" },
+      { name: "RAGs and Large Language Models" },
+      { name: "Deep Learning" },
+      { name: "Computer Vision" },
+      { name: "Natural Language Processing" },
+      { name: "Object Detection" },
+      // { name: "Vision-Language Models" },
       { name: "Transformers" },
       { name: "Multimodal Learning" },
-      { name: "Retrieval-Augmented Generation" },
-      { name: "Neural Networks" },
-      { name: "Computer Vision" },
+      // { name: "Retrieval-Augmented Generation" },
+      // { name: "Neural Networks" },
     ],
   },
   {
@@ -50,6 +53,7 @@ const SKILL_GROUPS = [
     group: "Web",
     items: [
       { name: "Django", icon: "devicon-django-plain" },
+      { name: "FastAPI", icon: "devicon-fastapi-plain" },
       { name: "React", icon: "devicon-react-original" },
       { name: "Node.js", icon: "devicon-nodejs-plain" },
       { name: "Express.js", icon: "devicon-express-original" },
@@ -73,7 +77,9 @@ const SKILL_GROUPS = [
     group: "Cloud & LLM Platforms",
     items: [
       { name: "AWS", icon: "devicon-amazonwebservices-plain" },
+      { name: "Azure", icon: "devicon-azure-plain" },
       { name: "Amazon Bedrock" },
+      { name: "Google APIs" },
       { name: "Ollama" },
       { name: "Langfuse" },
     ],
@@ -88,6 +94,7 @@ const SKILL_GROUPS = [
       { name: "npm", icon: "devicon-npm-original-wordmark" },
       { name: "Odoo" },
       { name: "HubSpot" },
+      { name: "Microsoft 365" },
     ],
   },
   {

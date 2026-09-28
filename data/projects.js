@@ -25,20 +25,22 @@ const FEATURED_PROJECTS = [
     tags: ["Python", "Django", "scikit-learn", "Plotly", "Pandas", "NumPy", "JavaScript"],
     links: { code: "https://github.com/SankalpVaish/Django_Graphs", demo: "", writeup: "https://sankalpvaish.github.io/Django_Graphs/" },
   },
-  {
-    title: "Dementia Detection via Alexa Interactions",
-    period: "Aug 2025 – Dec 2025",
-    summary:
-      "A contactless system for assessing cognitive decline in older adults, analysing facial muscle activity and speech during structured Alexa interactions. Multimodal features were correlated against MoCA scores to validate the signal.",
-    tags: ["Python", "OpenCV", "NLTK", "Multimodal Transformers"],
-    // TODO: paste a DOI / IEEE Xplore URL into `paper` and a "Paper" link
-    // appears on the card. This work underpins two publications:
-    //   • CogDrift-4D (Healthcom 2026)
-    //   • Task-Centric Multimodal Learning for Cognitive Impairment Detection
-    //     (GLOBECOM 2026)
-    // Pick whichever is the better citation, or split into two project entries.
-    links: { paper: "", code: "", demo: "", writeup: "" },
-  },
+  /*
+   * Moved into the MobCP Lab / University of North Carolina experience entry in
+   * index.html. Uncomment to show it as a project card here again.
+   *
+   * Note: this work underpins two publications — CogDrift-4D (Healthcom 2026)
+   * and Task-Centric Multimodal Learning (GLOBECOM 2026). Both are listed in
+   * data/publications.js, so the DOIs belong there rather than here.
+   */
+  // {
+  //   title: "Dementia Detection via Alexa Interactions",
+  //   period: "Aug 2025 – Dec 2025",
+  //   summary:
+  //     "A contactless system for assessing cognitive decline in older adults, analysing facial muscle activity and speech during structured Alexa interactions. Multimodal features were correlated against MoCA scores to validate the signal.",
+  //   tags: ["Python", "OpenCV", "NLTK", "Multimodal Transformers"],
+  //   links: { paper: "", code: "", demo: "", writeup: "" },
+  // },
   {
     title: "Diabetes Distress",
     period: "Sep 2025 – Nov 2025",
@@ -52,14 +54,18 @@ const FEATURED_PROJECTS = [
       writeup: "https://stampleyresearchgroup.com/ai-diabetes-hackathon-team/",
     },
   },
-  {
-    title: "Federated Authentication & Hardware MFA",
-    period: "May 2025 – Jun 2025",
-    summary:
-      "Worked with a local government to integrate ADFS into their server environment, enabling secure single sign-on across applications including Exchange. Implemented YubiKey-based multi-factor authentication, smart card authentication for Windows logins, and YubiKey auth for Fortinet VPN.",
-    tags: ["ADDS", "ADFS", "YubiKey", "Fortinet VPN", "Microsoft Exchange"],
-    links: { code: "", demo: "", writeup: "" },
-  },
+  /*
+   * Moved into the MobCP Lab / Town of Weymouth, MA experience entry in
+   * index.html. Uncomment to show it as a project card here again.
+   */
+  // {
+  //   title: "Federated Authentication & Hardware MFA",
+  //   period: "May 2025 – Jul 2025",
+  //   summary:
+  //     "Worked with a local government to integrate ADFS into their server environment, enabling secure single sign-on across applications including Exchange. Implemented YubiKey-based multi-factor authentication, smart card authentication for Windows logins, and YubiKey auth for Fortinet VPN.",
+  //   tags: ["ADDS", "ADFS", "YubiKey", "Fortinet VPN", "Microsoft Exchange"],
+  //   links: { code: "", demo: "", writeup: "" },
+  // },
   /*
    * Moved into the Visual Attention Lab / Blub0x experience entry in index.html.
    * Uncomment to show it as a project card here again.
@@ -72,6 +78,22 @@ const FEATURED_PROJECTS = [
   //   tags: ["Python", "OpenCV", "YOLOv8", "OCR"],
   //   links: { code: "", demo: "", writeup: "" },
   // },
+  {
+    title: "Facial Authentication System",
+    period: "Jul 2024 – Nov 2024",
+    summary:
+      "An image scoring system that filters low-quality and misleading facial images before training. Trained on centroids of EfficientNet embeddings to improve authentication robustness and efficiency through optimized preprocessing and automated filtering.",
+    tags: ["Python", "OpenCV", "TensorFlow", "EfficientNet"],
+    links: { paper: "https://sankalpvaish.github.io/Portfolio/#publications" },
+  },
+  {
+    title: "Age-Related Functional Decline Detection",
+    period: "Apr 2024 – Jun 2024",
+    summary:
+      "Data analysis and model development for early detection of age-related functional decline. Built a classifier categorising change in physical function as improved, similar or declined, expanding the dataset by pairing features to remove the need for cross-validation.",
+    tags: ["Python", "scikit-learn", "Neural Networks"],
+    links: { paper: "https://ieeexplore.ieee.org/abstract/document/10880842" },
+  },
   {
     title: "UMass Boston 3D Campus Model",
     period: "Sep 2023 – Dec 2023",
@@ -87,25 +109,6 @@ const FEATURED_PROJECTS = [
  * "More projects" disclosure so the featured work above stays prominent.
  */
 const ARCHIVE_PROJECTS = [
-  {
-    title: "Facial Recognition",
-    period: "Jul 2024 – Nov 2024",
-    summary:
-      "An image scoring system that filters low-quality and misleading facial images before training. Trained on centroids of EfficientNet embeddings to improve recognition robustness and efficiency.",
-    tags: ["Python", "OpenCV", "TensorFlow", "EfficientNet"],
-    // TODO: this is the basis of your first-author GLOBECOM 2026 paper, "An
-    // Enhanced Facial Authentication Approach". Add the DOI here — and consider
-    // moving this entry up into FEATURED_PROJECTS now that it is published work.
-    links: { paper: "" },
-  },
-  {
-    title: "Age-Related Functional Decline Detection",
-    period: "Apr 2024 – Jun 2024",
-    summary:
-      "Data analysis and model development for early detection of age-related functional decline. Built a classifier categorising change in physical function as improved, similar or declined, expanding the dataset by pairing features to remove the need for cross-validation.",
-    tags: ["Python", "scikit-learn", "Neural Networks"],
-    links: { paper: "https://ieeexplore.ieee.org/abstract/document/10880842" },
-  },
   {
     title: "Object Detection and Tracking",
     period: "Jan 2024 – Mar 2024",
