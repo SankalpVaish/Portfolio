@@ -26,6 +26,7 @@ const SKILL_GROUPS = [
   {
     group: "Research Areas",
     items: [
+      { name: "Agentic AI" },
       { name: "RAGs and Large Language Models" },
       { name: "Deep Learning" },
       { name: "Computer Vision" },
