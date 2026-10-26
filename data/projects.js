@@ -10,12 +10,20 @@
 
 const FEATURED_PROJECTS = [
   {
+    title: "CareBridge",
+    period: "Sep 2026 – Oct 2026",
+    summary:
+      "A healthcare navigation platform helping people in rural areas access specialists, afford care, and coordinate with their local clinic. Provides AI-powered symptom checking, cost estimation, insurance coverage analysis, and referral coordination. Demo software with synthetic data — guidance only, never diagnoses or recommends treatment.",
+    tags: ["React", "Vite", "Node.js", "Express", "Neon", "PostgreSQL", "Vercel", "Tailwind CSS", "Groq API"],
+    links: { code: "https://github.com/SankalpVaish/CareBridge/tree/V1.1.0", demo: "https://care-bridge-ten-omega.vercel.app/care", writeup: "" },
+  },
+  {
     title: "Gmail RAG Assistant",
     period: "Dec 2025 – Mar 2026",
     summary:
       "A privacy-preserving Retrieval-Augmented Generation system that indexes Gmail messages into a local vector database and answers natural-language questions over them using a locally hosted LLM — no email content leaves the machine.",
     tags: ["Python", "LLaMA 3", "RAG", "ChromaDB", "Ollama", "Google APIs"],
-    links: { code: "https://github.com/SankalpVaish/Gmail-RAG-Assistant", demo: "", writeup: "https://sankalpvaish.github.io/Gmail-RAG-Assistant/" },
+    links: { code: "https://github.com/SankalpVaish/Gmail-RAG-Assistant", demo: "https://sankalpvaish.github.io/Gmail-RAG-Assistant/", writeup: "" },
   },
   {
     title: "ML Model Training & Analytics Platform",
@@ -23,7 +31,7 @@ const FEATURED_PROJECTS = [
     summary:
       "A full-stack Django application for end-to-end data analysis, preprocessing and model training. Supports interactive visualizations, configurable train–test splits and scaling, multiple algorithms, and side-by-side comparison of run results.",
     tags: ["Python", "Django", "scikit-learn", "Plotly", "Pandas", "NumPy", "JavaScript"],
-    links: { code: "https://github.com/SankalpVaish/Django_Graphs", demo: "", writeup: "https://sankalpvaish.github.io/Django_Graphs/" },
+    links: { code: "https://github.com/SankalpVaish/Django_Graphs", demo: "https://sankalpvaish.github.io/Django_Graphs/", writeup: "" },
   },
   /*
    * Moved into the MobCP Lab / University of North Carolina experience entry in
