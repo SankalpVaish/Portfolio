@@ -22,15 +22,12 @@
 const PUBLICATIONS = [
   {
     authors:
-      "**Sankalp Vaish**, Sumukh Veeramalla, Rishank Singh, Caroline Summerour, John Batsis, Xiaohui Liang",
-    title:
-      "CogDrift-4D: Hierarchical Multimodal Modeling of Temporal Behavioral Decay for MCI Detection",
+      "**Sankalp Vaish**, Rishank Singh, Sumukh Veeramalla, Caroline Summerour, John Batsis, Xiaohui Liang",
+    title: "Task-Centric Multimodal Learning for Cognitive Impairment Detection",
     venue:
-      "IEEE International Conference on E-health Networking, Application & Services (Healthcom)",
+      "IEEE Global Communications Conference (GLOBECOM), Selected Areas in Communications: E-Health",
     year: 2026,
-    // TODO: set status to "To appear" if accepted but not yet presented, or
-    // remove the field entirely once it is published. Add a doi/pdf link below.
-    links: {},
+    links: { arxiv: "https://arxiv.org/abs/2610.20906" },
   },
   {
     authors:
@@ -44,12 +41,15 @@ const PUBLICATIONS = [
   },
   {
     authors:
-      "**Sankalp Vaish**, Rishank Singh, Sumukh Veeramalla, Caroline Summerour, John Batsis, Xiaohui Liang",
-    title: "Task-Centric Multimodal Learning for Cognitive Impairment Detection",
+      "**Sankalp Vaish**, Sumukh Veeramalla, Rishank Singh, Caroline Summerour, John Batsis, Xiaohui Liang",
+    title:
+      "CogDrift-4D: Hierarchical Multimodal Modeling of Temporal Behavioral Decay for MCI Detection",
     venue:
-      "IEEE Global Communications Conference (GLOBECOM), Selected Areas in Communications: E-Health",
+      "IEEE International Conference on E-health Networking, Application & Services (Healthcom)",
     year: 2026,
-    links: {},
+    // TODO: set status to "To appear" if accepted but not yet presented, or
+    // remove the field entirely once it is published. Add a doi/pdf link below.
+    links: { arxiv: "https://arxiv.org/abs/2610.20877" },
   },
   {
     authors:
